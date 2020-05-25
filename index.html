@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Test issue</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel='stylesheet' href='dist/style.css'>
+</head>
+<body>
+<section class="city">
+  <div class="container">
+    <div class="city__box">
+      <div class="city__wrap-img">
+        <img src="src/img/Barcelona.png" alt="Barcelona">
+      </div>
+      <div class="city__wrap-descr">
+        <h1 class="city__title"> Барселона — обзор города </h1>
+        <p class="city__descr"> Барселона с её золотистыми пляжами, архитектурными шедеврами Гауди, многочисленными
+          фестивалями и гастрономическим разнообразием понравилась мне в первый
+          же день пребывания и стала местом, в котором... </p>
+        <a href="#" class="city__link"> Читать дальше </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="review">
+  <div class="container">
+    <div class="review__box">
+      <h3 class="review__title"> Отзывы о Барселоне </h3>
+      <div class="review__slider swiper-container">
+        <div class="review__wrapper swiper-wrapper">
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png">
+                <p class="review__slide-top-title"> Наталья Полянская</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Барселона ‒ моя третья большая любовь, после Вены и
+                  Крита.
+                  Это город,
+                  в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                  рекомендую хоть раз там
+                  побывать и осмотреть ...</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">9 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png" alt="face img">
+                <p class="review__slide-top-title">Elena Bulgakova</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Плюсы города: весь город одни плюсы! Минусы города: не
+                  видела. В наш марафон по
+                  Европе не вписалось 2 испанских города от усталости - решили
+                  остаток путешествия провести в
+                  Барселоне, впечатления незабываемые, город волшебный, впечатлений море</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">3 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png" alt="face img">
+                <p class="review__slide-top-title"> Наталья Полянская</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Барселона ‒ моя третья большая любовь, после Вены и
+                  Крита.
+                  Это город,
+                  в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                  рекомендую хоть раз там
+                  побывать и осмотреть замечательные достопримечательности этого фееричного города, так
+                  как его история очень богата</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">9 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png">
+                <p class="review__slide-top-title"> Elena Bulgakova</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Плюсы города: весь город одни плюсы! Минусы города: не
+                  видела. В наш марафон по
+                  Европе не вписалось 2 испанских города от усталости - решили
+                  остаток путешествия провести в
+                  Барселоне, впечатления незабываемые, город волшебный, впечатлений море</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src=review__slide-gallery-img"src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">9 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png" alt="face img">
+                <p class="review__slide-top-title"> Наталья Полянская</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Барселона ‒ моя третья большая любовь, после Вены и
+                  Крита.
+                  Это город,
+                  в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                  рекомендую хоть раз там
+                  побывать и осмотреть ...</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">9 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__slide swiper-slide">
+            <div class="review__slide-elem">
+              <div class="review__slide-top">
+                <img class="review__slide-top-img" src="src/img/slide-face.png">
+                <p class="review__slide-top-title"> Наталья Полянская</p>
+              </div>
+
+              <div class="review__slide-body">
+                <h3 class="review__slide-body-title"><span class="review__text-color"> Барселона </span> —
+                  о
+                  городе :</h3>
+                <p class="review__slide-body-descr">Барселона ‒ моя третья большая любовь, после Вены и
+                  Крита.
+                  Это город,
+                  в который я каждый раз возвращаюсь с огромным удовольствием, всем
+                  рекомендую хоть раз там
+                  побывать и осмотреть ...</p>
+                <div class="review__slide-gallery">
+                  <a href="src/img/gallery-1.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-1.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-3.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-3.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                                     <span class="review__slide-count">
+                                        +7
+                                    </span>
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                  <a href="src/img/gallery-2.png" data-fancybox="image" class="review__slide-gallery-link">
+                    <div class="review__slide-gallery-img">
+                      <img src="src/img/gallery-2.png" alt="gallery">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="review__slide-bottom">
+                <p class="review__slide-bottom-date">Около 1 года назад</p>
+                <p class="review__slide-bottom-comment">9 комментариев</p>
+                <div class="review__like">
+                  <a href="#" class="review__like-link">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M53.333,224C23.936,224,0,247.936,0,277.333V448c0,29.397,23.936,53.333,53.333,53.333h64c12.011,0,23.061-4.053,32-10.795V224H53.333z"/><path d="M512,304c0-12.821-5.077-24.768-13.888-33.579c9.963-10.901,15.04-25.515,13.653-40.725c-2.496-27.115-26.923-48.363-55.637-48.363H324.352c6.528-19.819,16.981-56.149,16.981-85.333c0-46.272-39.317-85.333-64-85.333c-22.165,0-37.995,12.48-38.677,12.992c-2.517,2.027-3.989,5.099-3.989,8.341v72.341l-61.44,133.099l-2.56,1.301v228.651C188.032,475.584,210.005,480,224,480h195.819c23.232,0,43.563-15.659,48.341-37.269c2.453-11.115,1.024-22.315-3.861-32.043c15.765-7.936,26.368-24.171,26.368-42.688c0-7.552-1.728-14.784-5.013-21.333C501.419,338.731,512,322.496,512,304z"/></svg>
+                  </a>
+                  <span class="review__like-count">9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review__pagination swiper-pagination"></div>
+      <a href="#" class="review__more">
+        <p class="review__more-descr">Все отзывы</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="chat">
+  <div class="container">
+    <div class="chat__box">
+      <div class="chat__wrap chat__wrap--mod">
+        <h3 class="chat__title">Чат с пользователем</h3>
+        <div class="chat__body">
+          <div class="chat__top">
+            <div class="chat__top-box">
+              <div class="chat__top-box-img">
+                <img src="src/img/chat-user.png" alt="user">
+              </div>
+              <div class="chat__top-user">
+                <p class="chat__top-user-title"> Наталия Полянская</p>
+                <p class="chat__top-user-role">Гид по Баварии, фотограф</p>
+              </div>
+            </div>
+            <div class="chat__top-rating">
+              <div class="chat__rating">
+                <div class="chat__stars">
+                  <div class="chat__on" style="width: 88%;"></div>
+                  <div class="chat__live">
+                    <span data-rate="1"></span>
+                    <span data-rate="2"></span>
+                    <span data-rate="3"></span>
+                    <span data-rate="4"></span>
+                    <span data-rate="5"></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="chat__messages">
+            <div class="chat__message">
+              <div class="chat__message-image">
+                <img src="src/img/chat-user.png" alt="user img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Из достопримечательностей могу предложить обратить внимание на вулкан Майон, путешествие запомнится
+                  вам надолго хотя бы из-за невероятной сложности подъема на него. Поверьте, это стоит того;
+                  также хотелf бы отметить очень важную область исследования
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 17:45
+                </div>
+              </div>
+            </div>
+            <div class="chat__message chat__message--gray">
+              <div class="chat__message-image">
+                <img src="src/img/chat-admin.png" alt="admin img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Что из себя представляет вулкан? Просто хочу убедиться, что готова к такому путешествию
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 18:45
+                </div>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__message-image">
+                <img src="src/img/chat-user.png" alt="user img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Из достопримечательностей могу предложить обратить внимание на вулкан Майон, путешествие запомнится
+                  вам надолго хотя бы из-за невероятной сложности подъема на него. Поверьте, это стоит того;
+                  также хотелf бы отметить очень важную область исследования
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 17:45
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__panel">
+                        <span class="chat__nick">
+                            <img src="src/img/chat-user.png" alt="user">
+                        </span>
+            <input type="text" name="message_text" class="chat__message-input"
+                   placeholder="Напишите сообщение...">
+            <button type="button" class="chat__btn">
+              <svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"
+                    fill="#039be5"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="chat__wrap">
+        <h3 class="chat__title">Чат с администратором</h3>
+        <div class="chat__body">
+          <div class="chat__top">
+            <div class="chat__top-box">
+              <div class="chat__top-box-img">
+                <img src="src/img/chat-admin.png" alt="user">
+              </div>
+              <div class="chat__top-user">
+                <p class="chat__top-user-title"> Администратор</p>
+                <p class="chat__top-user-role">TravelAsk</p>
+              </div>
+            </div>
+          </div>
+          <div class="chat__messages">
+            <div class="chat__message">
+              <div class="chat__message-image">
+                <img src="src/img/chat-user.png" alt="user img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Из достопримечательностей могу предложить обратить внимание на вулкан Майон, путешествие запомнится
+                  вам надолго хотя бы из-за невероятной сложности подъема на него. Поверьте, это стоит того;
+                  также хотелf бы отметить очень важную область исследования
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 17:45
+                </div>
+              </div>
+            </div>
+            <div class="chat__message chat__message--gray">
+              <div class="chat__message-image">
+                <img src="src/img/chat-admin.png" alt="admin img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Что из себя представляет вулкан? Просто хочу убедиться, что готова к такому путешествию
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 18:45
+                </div>
+              </div>
+            </div>
+            <div class="chat__message">
+              <div class="chat__message-image">
+                <img src="src/img/chat-user.png" alt="user img">
+              </div>
+              <div class="chat__message-information">
+                <p class="chat__message-text">
+                  Из достопримечательностей могу предложить обратить внимание на вулкан Майон, путешествие запомнится
+                  вам надолго хотя бы из-за невероятной сложности подъема на него. Поверьте, это стоит того;
+                  также хотелf бы отметить очень важную область исследования
+                </p>
+                <div class="chat__message-date">
+                  Вчера в 17:45
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__panel">
+                        <span class="chat__admin">
+                            <img src="src/img/chat-admin.png" alt="admin">
+                        </span>
+            <input type="text" name="message_text" class="chat__message-input"
+                   placeholder="Напишите сообщение...">
+            <button type="button" class="chat__btn">
+              <svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"
+                    fill="#039be5"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="dist/bundle.js"></script>
+</html>

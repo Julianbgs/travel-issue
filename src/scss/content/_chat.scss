@@ -1,0 +1,293 @@
+.chat {
+  position: relative;
+}
+
+.chat__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.chat__wrap {
+  position: relative;
+  width: 45%;
+  margin: 20px auto;
+  padding: 10px;
+  color: #4F6B72;
+  font-family: "PT Sans", Verdana, Arial, sans-serif;
+  font-size: 13px;
+
+  @include breakpoint(max-width 860px) {
+    width: 100%;
+  }
+
+  &:before {
+    position: absolute;
+    right: -12px;
+    top: 57px;
+    display: inline;
+    width: 2px;
+    height: 550px;
+    content: "";
+    background: #EBE9E4;
+
+    @include breakpoint(max-width 750px) {
+      display: none;
+    }
+  }
+}
+
+.chat__title {
+  color: #000000;
+  font-family: $KevitPro;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+
+.chat__body {
+  position: relative;
+}
+
+.chat__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+  border-bottom: 1px solid #ECECEC;
+  background-color: white;
+}
+
+.chat__top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.chat__top-box-img {
+  width: 44px;
+  height: auto;
+  padding-left: 14px;
+  margin-right: 10px;
+
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.chat__top-user {
+  width: 77%;
+}
+
+.chat__top-rating {
+  margin-top: 15px;
+}
+
+.chat__top-user-title {
+  position: relative;
+  top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000000;
+  font-family: $KevitPro;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.chat__top-user-role {
+  position: relative;
+  margin-left: 10px;
+  color: #FF4641;
+  font-family: $KevitPro;
+  font-size: 13px;
+  line-height: 17px;
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 10px;
+    background-image: url("../img/icons/flag.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.chat .chat__messages {
+  height: 430px;
+  padding: 5px;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat .chat__messages::-webkit-scrollbar {
+  width: 3px;
+}
+
+.chat .chat__messages::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #ffffff;
+}
+
+.chat .chat__messages::-webkit-scrollbar-thumb {
+  background-color: #FF4641;
+  outline: 1px solid #ffffff;
+}
+
+.chat__message {
+  display: flex;
+  padding: 12px 0 18px;
+}
+
+.chat__message--gray {
+  background-color: #F9F7F2;
+}
+
+.chat__message-image {
+  margin-right: 19px;
+  padding: 12px 0 0 12px;
+  width: 44px;
+  height: auto;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.chat__message-information {
+  flex-grow: 1;
+  padding-right: 41px;
+  box-sizing: border-box;
+}
+
+.chat__message-text {
+  margin: 0;
+  font-family: $KevitPro;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.chat__message-date {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 25px;
+  text-align: left;
+  color: #9D9D9D;
+}
+
+.chat .chat__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 19px 28px 26px;
+  background-color: white;
+  border-top: 1px solid #ECECEC;
+  box-sizing: border-box;
+}
+
+.chat__message-input {
+  padding: 14px 24px;
+  box-sizing: border-box;
+  color: #A3A2A2;
+  font-family: $KevitPro;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.chat__btn {
+  width: 22px;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  svg {
+    width: 100%;
+    height: auto;
+    path {
+      fill: #FF4641;
+      transition: 1s;
+
+      &:hover {
+        fill: #3e96dc;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.msg {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.user {
+  font-family: $KevitPro;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FF4641;
+}
+
+.msg-text {
+  font-family: $KevitPro;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.chat__rating .chat__stars {
+  position: relative;
+  display: block;
+  float: left;
+  height: 20px;
+  width: 65px;
+  background-image: url("../img/icons/stars.png");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  margin-right: 5px;
+}
+
+.chat__rating .chat__stars .chat__on {
+  background-image: url("../img/icons/stars-empty.png");
+
+}
+
+.chat__rating .chat__stars .chat__live {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.chat__rating .chat__stars .chat__live span {
+  display: block;
+  float: left;
+  cursor: pointer;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icons/stars-empty.png");
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+}
+
+.chat__rating .chat__stars .chat__live span:hover ~ span {
+  background-position: 0 0px;
+}
+
+.chat__rating .chat__stars .chat__live:hover {
+  opacity: 1;
+}
